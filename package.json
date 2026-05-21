@@ -1,0 +1,6 @@
+{
+  "name": "shanghai-weather-auto",
+  "version": "1.0.0",
+  "main": "spider.js",
+  "dependencies": {}
+}
