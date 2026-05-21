@@ -1,10 +1,12 @@
 {
-  "updateTimeISO": "2026-05-21T06:53:03.814Z",
-  "updateTimeLocal": "2026/5/21 06:53:03",
+  "city": "上海市",
   "sourceUrl": "http://wx.soweather.com/wxapp/qxsk.jsp",
-  "city": "上海",
-  "maxTemperature": null,
-  "minTemperature": null,
-  "areaWeatherList": [],
-  "rawText": "【上海天气发布】气象实况 --> --> var tabmarginleft = 4; var tabwidth = 100; $(function() { var param = \"\"; if (param != \"\") { $(\".tab ul li a\").removeClass(\"default\"); $(\".tab ul li\").removeClass(\"lion\"); } else { $(\".tab ul li a\").eq(0).removeClass(\"default\"); $(\".tab ul li a\").eq(0).addClass(\"on\"); $(\".tab ul li\").eq(0).addClass(\"lion\"); } if (param == \"实时气温\") { // $(\".tab ul li:eq(0) a\").addClass(\"on\"); $(\".con\").hide(); $(\".con\").eq(0).show(); } else if (param == \"累计降水\") { // $(\".tab ul li:eq(1) a\").addClass(\"on\"); $(\".con\").hide(); $(\".con\").eq(1).show(); } else if (param == \"风速风向\") { // $(\".tab ul l"
+  "statTime": "",
+  "updateTimeISO": "2026-05-21T07:00:33.036Z",
+  "updateTimeLocal": "2026/5/21 07:00:33",
+  "globalMinTemperature": null,
+  "globalMaxTemperature": null,
+  "districtSites": [],
+  "detailSites": [],
+  "allSites": []
 }
