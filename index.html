@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上海区县天气</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            position: relative;
+            background: #f5f7fa;
+            color: #333;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        /* 背景图 + 透明度80% */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://mpimg.cn/view.php/4ea1c3fcf731c14045b1ce162341ead7.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #2d8cf0;
+            margin-bottom: 10px;
+        }
+
+        .update-time {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .temp-summary {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        .temp-item {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .temp-min {
+            color: #2d8cf0;
+        }
+
+        .temp-max {
+            color: #ff7d00;
+        }
+
+        .site-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .site-card {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+            backdrop-filter: blur(5px);
+        }
+
+        .site-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .site-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #222;
+        }
+
+        .site-temp {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px;
+            border-top: 1px solid rgba(238, 238, 238, 0.6);
+            color: #555;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .site-grid {
+                grid-template-columns: 1fr;
+            }
+            .temp-summary {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>上海区县天气</h1>
+            <div class="update-time" id="updateTime"></div>
+        </div>
+
+        <div class="temp-summary">
+            <div class="temp-item">
+                全市最低：<span class="temp-min" id="globalMin"></span>℃
+            </div>
+            <div class="temp-item">
+                全市最高：<span class="temp-max" id="globalMax"></span>℃
+            </div>
+        </div>
+
+        <div class="site-grid" id="siteContainer"></div>
+
+        <div class="footer">
+            作者：王tom
+        </div>
+    </div>
+
+    <script>
+        const apiUrl = "https://gh-proxy.org/https://raw.githubusercontent.com/gjjlovewhy-ipoh/soweather/refs/heads/main/weather.json";
+
+        async function loadWeather() {
+            try {
+                const res = await fetch(apiUrl);
+                const data = await res.json();
+
+                document.getElementById("updateTime").textContent = "更新时间：" + data.updateTimeLocal;
+                document.getElementById("globalMin").textContent = data.globalMinTemperature;
+                document.getElementById("globalMax").textContent = data.globalMaxTemperature;
+
+                const container = document.getElementById("siteContainer");
+                data.allSites.forEach(site => {
+                    const card = document.createElement("div");
+                    card.className = "site-card";
+                    card.innerHTML = `
+                        <div class="site-name">${site.siteName}</div>
+                        <div class="site-temp">
+                            <span>最低：${site.minTemp}℃</span>
+                            <span>最高：${site.maxTemp}℃</span>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            } catch (err) {
+                console.error("加载天气数据失败：", err);
+                document.getElementById("siteContainer").innerHTML = "<p style='text-align:center;grid-column:1/-1;'>数据加载失败，请稍后重试</p>";
+            }
+        }
+
+        window.onload = loadWeather;
+    </script>
+</body>
+</html>
