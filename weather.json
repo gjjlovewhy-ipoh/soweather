@@ -2,67 +2,72 @@
   "city": "上海市",
   "sourceUrl": "http://wx.soweather.com/wxapp/qxsk.jsp",
   "statTime": "",
-  "updateTimeISO": "2026-06-08T12:18:53.398Z",
-  "updateTimeLocal": "2026/6/8 12:18:53",
+  "updateTimeISO": "2026-06-08T16:41:49.444Z",
+  "updateTimeLocal": "2026/6/8 16:41:49",
   "globalMinTemperature": 0,
   "globalMaxTemperature": 25.8,
   "districtSites": [
     {
       "siteName": "徐家汇",
-      "minTemp": 21.5,
-      "maxTemp": 21.5
+      "minTemp": 21,
+      "maxTemp": 23.6
     },
     {
       "siteName": "宝山",
-      "minTemp": 20.3,
-      "maxTemp": 20.4
+      "minTemp": 19.3,
+      "maxTemp": 22.2
     },
     {
       "siteName": "崇明",
-      "minTemp": 19.6,
-      "maxTemp": 19.7
+      "minTemp": 18.7,
+      "maxTemp": 21.7
     },
     {
       "siteName": "嘉定",
-      "minTemp": 20.4,
-      "maxTemp": 20.5
+      "minTemp": 19.3,
+      "maxTemp": 22.4
     },
     {
       "siteName": "青浦",
-      "minTemp": 19.7,
-      "maxTemp": 19.7
+      "minTemp": 18.5,
+      "maxTemp": 23.3
     },
     {
       "siteName": "闵行",
-      "minTemp": 19.9,
-      "maxTemp": 19.9
+      "minTemp": 19.6,
+      "maxTemp": 24.1
     },
     {
       "siteName": "浦东",
-      "minTemp": 20.3,
-      "maxTemp": 20.4
+      "minTemp": 20.2,
+      "maxTemp": 23.4
     },
     {
       "siteName": "奉贤",
       "minTemp": 18,
-      "maxTemp": 18.1
+      "maxTemp": 24.1
     },
     {
       "siteName": "松江",
-      "minTemp": 18.8,
-      "maxTemp": 18.9
+      "minTemp": 18.6,
+      "maxTemp": 23.7
     },
     {
       "siteName": "金山",
-      "minTemp": 17.8,
-      "maxTemp": 17.9
+      "minTemp": 17.5,
+      "maxTemp": 25.3
     }
   ],
   "detailSites": [
     {
+      "siteName": "嘉定安亭黄渡",
+      "minTemp": 0,
+      "maxTemp": 3
+    },
+    {
       "siteName": "青浦朱家角新旺",
-      "minTemp": 20.2,
-      "maxTemp": 20.4
+      "minTemp": 19.7,
+      "maxTemp": 24.4
     },
     {
       "siteName": "松江车墩高桥",
@@ -75,8 +80,13 @@
       "maxTemp": 24.1
     },
     {
+      "siteName": "青浦朱家角珠溪",
+      "minTemp": 0,
+      "maxTemp": 2
+    },
+    {
       "siteName": "青浦白鹤朱浦",
-      "minTemp": 20.2,
+      "minTemp": 18.9,
       "maxTemp": 20.4
     },
     {
@@ -86,22 +96,22 @@
     },
     {
       "siteName": "宝山月浦网格中心",
-      "minTemp": 20.4,
-      "maxTemp": 20.5
+      "minTemp": 19.4,
+      "maxTemp": 21.1
     },
     {
       "siteName": "闵行马桥女儿泾水闸",
-      "minTemp": 17.7,
+      "minTemp": 17.6,
       "maxTemp": 23.9
     },
     {
       "siteName": "闵行虹桥",
-      "minTemp": 21.5,
+      "minTemp": 20.8,
       "maxTemp": 21.6
     },
     {
       "siteName": "松江石湖荡张庄",
-      "minTemp": 17.5,
+      "minTemp": 17.4,
       "maxTemp": 24.2
     },
     {
@@ -111,13 +121,13 @@
     },
     {
       "siteName": "青浦金泽",
-      "minTemp": 0,
-      "maxTemp": 7
+      "minTemp": 1,
+      "maxTemp": 6
     },
     {
       "siteName": "宝山罗店度假村",
-      "minTemp": 4,
-      "maxTemp": 2
+      "minTemp": 0,
+      "maxTemp": 3
     },
     {
       "siteName": "松江泖港腰泾",
@@ -125,9 +135,14 @@
       "maxTemp": 24.4
     },
     {
+      "siteName": "嘉定南翔",
+      "minTemp": 0,
+      "maxTemp": 2
+    },
+    {
       "siteName": "浦东周家渡",
       "minTemp": 20.5,
-      "maxTemp": 20.6
+      "maxTemp": 21.2
     },
     {
       "siteName": "金山山阳龙宇路",
@@ -136,65 +151,70 @@
     },
     {
       "siteName": "松江九亭高科技园区",
-      "minTemp": 20.5,
+      "minTemp": 19.5,
       "maxTemp": 20.6
     }
   ],
   "allSites": [
     {
       "siteName": "徐家汇",
-      "minTemp": 21.5,
-      "maxTemp": 21.5
+      "minTemp": 21,
+      "maxTemp": 23.6
     },
     {
       "siteName": "宝山",
-      "minTemp": 20.3,
-      "maxTemp": 20.4
+      "minTemp": 19.3,
+      "maxTemp": 22.2
     },
     {
       "siteName": "崇明",
-      "minTemp": 19.6,
-      "maxTemp": 19.7
+      "minTemp": 18.7,
+      "maxTemp": 21.7
     },
     {
       "siteName": "嘉定",
-      "minTemp": 20.4,
-      "maxTemp": 20.5
+      "minTemp": 19.3,
+      "maxTemp": 22.4
     },
     {
       "siteName": "青浦",
-      "minTemp": 19.7,
-      "maxTemp": 19.7
+      "minTemp": 18.5,
+      "maxTemp": 23.3
     },
     {
       "siteName": "闵行",
-      "minTemp": 19.9,
-      "maxTemp": 19.9
+      "minTemp": 19.6,
+      "maxTemp": 24.1
     },
     {
       "siteName": "浦东",
-      "minTemp": 20.3,
-      "maxTemp": 20.4
+      "minTemp": 20.2,
+      "maxTemp": 23.4
     },
     {
       "siteName": "奉贤",
       "minTemp": 18,
-      "maxTemp": 18.1
+      "maxTemp": 24.1
     },
     {
       "siteName": "松江",
-      "minTemp": 18.8,
-      "maxTemp": 18.9
+      "minTemp": 18.6,
+      "maxTemp": 23.7
     },
     {
       "siteName": "金山",
-      "minTemp": 17.8,
-      "maxTemp": 17.9
+      "minTemp": 17.5,
+      "maxTemp": 25.3
+    },
+    {
+      "siteName": "嘉定安亭黄渡",
+      "minTemp": 0,
+      "maxTemp": 3
     },
     {
       "siteName": "青浦朱家角新旺",
-      "minTemp": 20.2,
-      "maxTemp": 20.4
+      "minTemp": 19.7,
+      "maxTemp": 24.4
     },
     {
       "siteName": "松江车墩高桥",
@@ -207,8 +227,13 @@
       "maxTemp": 24.1
     },
     {
+      "siteName": "青浦朱家角珠溪",
+      "minTemp": 0,
+      "maxTemp": 2
+    },
+    {
       "siteName": "青浦白鹤朱浦",
-      "minTemp": 20.2,
+      "minTemp": 18.9,
       "maxTemp": 20.4
     },
     {
@@ -218,22 +243,22 @@
     },
     {
       "siteName": "宝山月浦网格中心",
-      "minTemp": 20.4,
-      "maxTemp": 20.5
+      "minTemp": 19.4,
+      "maxTemp": 21.1
     },
     {
       "siteName": "闵行马桥女儿泾水闸",
-      "minTemp": 17.7,
+      "minTemp": 17.6,
       "maxTemp": 23.9
     },
     {
       "siteName": "闵行虹桥",
-      "minTemp": 21.5,
+      "minTemp": 20.8,
       "maxTemp": 21.6
     },
     {
       "siteName": "松江石湖荡张庄",
-      "minTemp": 17.5,
+      "minTemp": 17.4,
       "maxTemp": 24.2
     },
     {
@@ -243,13 +268,13 @@
     },
     {
       "siteName": "青浦金泽",
-      "minTemp": 0,
-      "maxTemp": 7
+      "minTemp": 1,
+      "maxTemp": 6
     },
     {
       "siteName": "宝山罗店度假村",
-      "minTemp": 4,
-      "maxTemp": 2
+      "minTemp": 0,
+      "maxTemp": 3
     },
     {
       "siteName": "松江泖港腰泾",
@@ -257,9 +282,14 @@
       "maxTemp": 24.4
     },
     {
+      "siteName": "嘉定南翔",
+      "minTemp": 0,
+      "maxTemp": 2
+    },
+    {
       "siteName": "浦东周家渡",
       "minTemp": 20.5,
-      "maxTemp": 20.6
+      "maxTemp": 21.2
     },
     {
       "siteName": "金山山阳龙宇路",
@@ -268,7 +298,7 @@
     },
     {
       "siteName": "松江九亭高科技园区",
-      "minTemp": 20.5,
+      "minTemp": 19.5,
       "maxTemp": 20.6
     }
   ]
